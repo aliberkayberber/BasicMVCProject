@@ -28,3 +28,4 @@
 /Users/aliberkayberber/Documents/Pratikler/BasicMVCProject/obj/Debug/net8.0/BasicMVCProject.pdb
 /Users/aliberkayberber/Documents/Pratikler/BasicMVCProject/obj/Debug/net8.0/BasicMVCProject.genruntimeconfig.cache
 /Users/aliberkayberber/Documents/Pratikler/BasicMVCProject/obj/Debug/net8.0/ref/BasicMVCProject.dll
+/Users/aliberkayberber/Documents/Pratikler/BasicMVCProject/obj/Debug/net8.0/BasicMVCProject.sourcelink.json
