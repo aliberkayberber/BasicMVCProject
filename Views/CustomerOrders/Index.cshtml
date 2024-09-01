@@ -1,0 +1,78 @@
+@model BasicMVCProject.Models.CustomerOrderViewModel
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Details</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table td {
+            padding: 15px;
+        }
+                table thead td {
+            background-color: #54585d;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 13px;
+            border: 1px solid #54585d;
+        }
+                table tbody td {
+            color: #636363;
+            border: 1px solid #dddfe1;
+        }
+                table tbody tr {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Customers Details</h2>
+    <ul>
+        @foreach (var customer in Model.Customers)
+        {
+            <li>
+                <p><strong>Customer Id: @customer.Id</strong></p>
+                <p><strong>Müsteri Name: @customer.FirstName @customer.LastName</strong></p>
+                <p><strong>Email: @customer.Email</strong></p>
+            </li>
+        }
+    </ul>
+
+    <h2>Orders Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.Id</td>
+                    <td>@order.ProductName</td>
+                    <td>@order.Price</td>
+                    <td>@order.Quantity</td>
+                </tr>
+                @* <li>Ürün Id: @order.Id Ürün: @order.ProductName Fiyat: @order.Price Adet: @order.Quantity</li> *@
+            }
+        </tbody>
+
+
+    </table>
+    <ul>
+
+    </ul>
+
+</body>
+
+</html>
